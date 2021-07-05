@@ -1,4 +1,5 @@
 package com.training.unit04.main;
+
 import java.util.Scanner;
 
 public class Task04 {
@@ -9,19 +10,18 @@ public class Task04 {
 		
 		int n = 10;
 		int[] mas = new int[n];
-		Scanner sc = new Scanner(System.in);
+		
 		
 		//заполнение массива
-		int j = 0;
+		
 		for (int i = 0; i < mas.length; i++) {
 			mas[i] = (int)(Math.random()*200);
 			System.out.print("[" + mas[i]+ "] ");
-			if (mas[i]%2 ==0) {
-				j++;
-			}
 		}
+		
 		System.out.println();
 		
+		Scanner sc = new Scanner(System.in);
 		int i;
 		System.out.print("введите значение от 0 до " + (n-3) + ": ");
 		i = sc.nextInt();
