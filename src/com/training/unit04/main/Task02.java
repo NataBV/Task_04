@@ -29,9 +29,9 @@ public class Task02 {
 	// поиск наибольшего
 	public static int findMax(int i, int j, int k) {
 		
-	if ((i > j) & (i > k)) {return (i);}
-	if ((j > i) & (j > k)) {return (j);}
-	if ((k > i) & (k > j)) {return (k);}
+	if ((i >= j) & (i >= k)) {return (i);}
+	if ((j >= i) & (j >= k)) {return (j);}
+	if ((k >= i) & (k >= j)) {return (k);}
 	return(0);
 	
 	}
@@ -39,9 +39,9 @@ public class Task02 {
 	// поиск наименьшего
 	public static int findMin(int i, int j, int k) {
 		
-	if ((i < j) & (i < k)) { return (i);}
-	if ((j < i) & (j < k)) { return (j);}
-	if ((k < i) & (k < j)) { return (k);}
+	if ((i =< j) & (i =< k)) { return (i);}
+	if ((j =< i) & (j =< k)) { return (j);}
+	if ((k =< i) & (k =< j)) { return (k);}
 	return(0);
 	
 	}
